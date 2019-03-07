@@ -1,4 +1,4 @@
-package exercises;
+package exercises.Class2;
 
 public class CountEvenNum {
     public static void main(String[] args) {

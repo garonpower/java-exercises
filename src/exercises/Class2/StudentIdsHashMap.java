@@ -1,4 +1,4 @@
-package exercises;
+package exercises.Class2;
 
 import java.util.*;
 
