@@ -1,13 +1,19 @@
 package org.launchcode.java.studios;
 
+import java.util.*;
+
 public class CountCharacters {
     public static void main(String[] args) {
 
-        String s = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan sem ut ligula scelerisque " +
+        String string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan sem ut ligula scelerisque " +
                 "sollicitudin. Ut at sagittis augue. Praesent quis rhoncus justo. Aliquam erat volutpat. Donec sit " +
                 "amet suscipit metus, non lobortis massa. Vestibulum augue ex, dapibus ac suscipit vel, volutpat eget " +
                 "massa. Donec nec velit non ligula efficitur luctus.";
+
+        String s = string.toUpperCase();
+
         char[] c = s.toCharArray();
+        Arrays.sort(c);
         int l = c.length;
         int i = 0, j = 0, counter = 0;
 
