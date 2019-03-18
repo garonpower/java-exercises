@@ -1,14 +1,15 @@
 package school;
 
 public class Student {
+    private static int nextStudentId = 1;
     private String name;
-    private final int studenId;
+    private final int studentId;
     private int numberOfCredits;
     private double gpa;
 
     public Student(String name, int studenId, int numberOfCredits, double gpa) {
         this.name = name;
-        this.studenId = studenId;
+        this.studentId = studenId;
         this.numberOfCredits = numberOfCredits;
         this.gpa = gpa;
     }
@@ -17,7 +18,20 @@ public class Student {
         this(name, studenId, 0, 0);
     }
 
+    public Student(String name) {
+        this(name, nextStudentId);
+        nextStudentId++;
+    }
+
     int getNumberOfCredits = 0;
+
+    public int getNextStudentId() {
+        return getNumberOfCredits;
+    }
+
+ /*   private void setNextStudentId(int aNextStudntId) {
+        nextStudentId = aNextStudentId;
+    }*/
 
     public String getName() {
         return name;
@@ -28,12 +42,12 @@ public class Student {
     }
 
     public int getStudenId() {
-        return studenId;
+        return studentId;
     }
 
-    public void setStudenId(int aStudentId) {
-        studenId = aStudentId;
-    }
+   /* public void setStudentId(int aStudentId) {
+        studentId = aStudentId;
+    }*/
 
     public int getNumberOfCredits() {
         return numberOfCredits;
