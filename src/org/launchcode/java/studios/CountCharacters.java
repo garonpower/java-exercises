@@ -19,7 +19,7 @@ public class CountCharacters {
 
         for (i = 0; i < l; i++) {
             counter = 0;
-            for (j = 0; j < l; j++) {
+            for (j = 0; j < l; j++) {// If not character then continue. don't count for that iteration.
 
                 if (j < i && c[i] == c[j]) {
                     break;
@@ -32,7 +32,7 @@ public class CountCharacters {
                 if (j == l-1) {
                     System.out.println(c[i] + " occurs " +counter+ " times!");
                 }
-            }
+}
 
 
         }
