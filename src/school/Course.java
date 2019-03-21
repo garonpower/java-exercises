@@ -4,8 +4,15 @@ import java.util.HashMap;
 
 public class Course {
 
-    private String courseName, letterGrade;
-    private int courseCredits, gradePoints;
+    private String courseName;
+    private int courseCredits;
+    private double courseGrade;
+
+    public Course(String courseName, int courseCredits, double courseGrade) {
+        this.courseName = courseName;
+        this.courseCredits = courseCredits;
+        this.courseGrade = courseGrade;
+    }
 
     public String getCourseName() {
         return courseName;
@@ -13,14 +20,6 @@ public class Course {
 
     public void setCourseName(String courseName) {
         this.courseName = courseName;
-    }
-
-    public String getLetterGrade() {
-        return letterGrade;
-    }
-
-    public void setLetterGrade(String letterGrade) {
-        this.letterGrade = letterGrade;
     }
 
     public int getCourseCredits() {
@@ -31,15 +30,15 @@ public class Course {
         this.courseCredits = courseCredits;
     }
 
-    public int getGradePoints() {
-        return gradePoints;
+    public double getCourseGrade() {
+        return courseGrade;
     }
 
-    public void setGradePoints(int gradePoints) {
-        this.gradePoints = gradePoints;
+    public void setCourseGrade(double courseGrade) {
+        this.courseGrade = courseGrade;
     }
 
-    HashMap<String, Integer> grades = new HashMap<>();
-
+    //    HashMap of courseName and courseCredits, ex: HIST101, 3
+    HashMap<String, Integer> courses = new HashMap<>();
 
 }
